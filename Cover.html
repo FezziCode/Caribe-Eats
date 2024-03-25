@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caribe Eats</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spirax&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#recipes">Recipes</a>
+    <a href="#about">About</a>
+    <a href="#Blog">Blog</a>
+  </div>
+
+  <div class="cover">
+    <img class="logo" src="Images/LogoC.png" alt="Website Logo"> 
+    <div class="search-bar">
+      <input type="text" placeholder="Search recipes...">
+      <button type="submit"><i class="fas fa-search"></i></button> 
+    </div>
+  </div>
+  <section style="background-color: #FFF3D4;">
+    <div class="TB">
+      <div class="text">
+        <h2>Check Out Our facorite Recipes </h2>
+      </div>
+      <button class="button"> More recipes</button>
+    </div>
+    <div class="recipe-cards-container">
+  
+        <div class="recipe-card" onclick="toggleRecipeDetails(this)">
+          <img class="recipe-image" src="Images/Arroz con gandulez.png" alt="A bowl of rice with Pigeon peas">
+          <div class="recipe-content">
+            <h2 class="recipe-title">Arroz con Gandules</h2>
+            <p class="recipe-description">Traditional Puerto Rican rice with pigeon peas dish.</p>
+            <h3 class="recipe-ingredients-heading">Ingredients:</h3>
+            <ul class="recipe-ingredients">
+              <li>2 cups white rice</li>
+              <li>1 can (15 oz) pigeon peas</li>
+              <li>4 cups water</li>
+              <li>1/2 cup sofrito sauce</li>
+              <li>2 tablespoons olive oil</li>
+              <li>1 teaspoon salt</li>
+            </ul>
+            <h3 class="recipe-instructions-heading">Instructions:</h3>
+            <ol class="recipe-instructions">
+              <li>Rinse rice under cold water until water runs clear.</li>
+              <li>In a large pot, heat olive oil over medium heat. Add sofrito and sauté for 2-3 minutes.</li>
+              <li>Add rice, water, pigeon peas, and salt. Bring to a boil, then reduce heat to low, cover, and simmer for 20-25 minutes, or until rice is cooked and liquid is absorbed.</li>
+              <li>Fluff rice with a fork before serving.</li>
+            </ol>
+          </div>
+        </div>
+      
+        <div class="recipe-card" onclick="toggleRecipeDetails(this)">
+          <img class="recipe-image" src="Images/Mofongo2.png" alt="A plate of fried mashed Plantains">
+          <div class="recipe-content">
+            <h2 class="recipe-title">Mofongo</h2>
+            <p class="recipe-description">A classic Puerto Rican dish made with mashed plantains.</p>
+            <h3 class="recipe-ingredients-heading">Ingredients:</h3>
+            <ul class="recipe-ingredients">
+              <li>2 green plantains</li>
+              <li>4 cloves garlic, minced</li>
+              <li>1/4 cup olive oil</li>
+              <li>Salt to taste</li>
+            </ul>
+            <h3 class="recipe-instructions-heading">Instructions:</h3>
+            <ol class="recipe-instructions">
+              <li>Peel and slice plantains into chunks.</li>
+              <li>Heat olive oil in a skillet over medium heat. Fry plantains until golden brown.</li>
+              <li>Remove plantains from skillet and mash with garlic and salt.</li>
+              <li>Form mashed plantains into balls and serve hot.</li>
+            </ol>
+          </div>
+        </div>
+      
+        <div class="recipe-card" onclick="toggleRecipeDetails(this)">
+          <img class="recipe-image" src="Images/Tostones.png" alt="Fried press Plantains on a plate">
+          <div class="recipe-content">
+            <h2 class="recipe-title">Tostones</h2>
+            <p class="recipe-description">Fried green plantains, a popular Puerto Rican appetizer.</p>
+            <h3 class="recipe-ingredients-heading">Ingredients:</h3>
+            <ul class="recipe-ingredients">
+              <li>2 green plantains</li>
+              <li>Oil for frying</li>
+              <li>Salt to taste</li>
+            </ul>
+            <h3 class="recipe-instructions-heading">Instructions:</h3>
+            <ol class="recipe-instructions">
+              <li>Peel plantains and cut them into 1-inch slices.</li>
+              <li>Heat oil in a skillet over medium-high heat.</li>
+              <li>Fry plantain slices until golden brown, then remove and drain excess oil.</li>
+              <li>Using a tostonera or flat surface, flatten the fried plantain slices.</li>
+              <li>Return flattened plantains to the skillet and fry again until crispy.</li>
+              <li>Sprinkle with salt and serve hot.</li>
+            </ol>
+          </div>
+        </div>
+      
+        <div class="recipe-card" onclick="toggleRecipeDetails(this)">
+          <img class="recipe-image" src="Images/Pastelon 2.png" alt=" lasagna plantain in a dish on top a wooden spoon">
+          <div class="recipe-content">
+            <h2 class="recipe-title">Pastelón</h2>
+            <p class="recipe-description">Puerto Rican plantain "lasagna" with ground beef and cheese.</p>
+            <h3 class="recipe-ingredients-heading">Ingredients:</h3>
+            <ul class="recipe-ingredients">
+              <li>4 ripe plantains</li>
+              <li>1 lb ground beef</li>
+              <li>1 onion, diced</li>
+              <li>2 cloves garlic, minced</li>
+              <li>1 bell pepper, diced</li>
+              <li>1 cup tomato sauce</li>
+              <li>2 cups shredded cheese</li>
+              <li>Salt and pepper to taste</li>
+            </ul>
+            <h3 class="recipe-instructions-heading">Instructions:</h3>
+            <ol class="recipe-instructions">
+              <li>Peel and slice plantains lengthwise, then boil until tender.</li>
+              <li>In a skillet, brown ground beef with onion, garlic, and bell pepper. Season with salt and pepper.</li>
+              <li>Layer half of the boiled plantains in a baking dish, followed by half of the ground beef mixture and half of the cheese. Repeat layers.</li>
+              <li>Bake at 350°F (175°C) for 20-25 minutes, or until cheese is melted and bubbly.</li>
+              <li>Serve hot and enjoy!</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+  
+  </section>
+
+  <Section style="background-color: #e69b64;">
+   <br><br><br><br><br>
+    <div class="container">
+      <div id="about" class="about-section">
+          <div class="image">
+              <img src="Images/About.png">
+          </div>
+          <div class="about-content">
+              <h2>About Us</h2>
+              <p>We are passionate about sharing the authentic flavors of Puerto Rican cuisine with the world. Our mission is to provide you with delicious recipes that capture the essence of Puerto Rican cooking.</p>
+              <p>From classic dishes like Arroz con Gandules to modern reinterpretations of traditional favorites, our recipes are carefully crafted to help you experience the vibrant culinary culture of Puerto Rico from your own kitchen</p>
+          </div>
+      </div>
+  </div>
+
+
+  </Section>
+
+ 
+
+     
+
+      <section style="background-color: #FFF3D4;">
+        <div class="TB">
+          <div class="text">
+            <p>Check Out Our Blog</p>
+          </div>
+          <button class="button">View Blog</button>
+        </div>
+          <div class="blog-cards-container">
+            <div class="blog-card">
+            <img class="blog-image" src="Images/Blog.png" alt="Returant with Puerto Rican Flag "> 
+            <div class="blog-content">
+                <h2 class="blog-title">Exploring Puerto Rican Cuisine</h2>
+                <p class="blog-description">Learn about the rich history and diverse flavors of Puerto Rican food.</p><br><br><br>
+            </div>
+            </div>
+            <div class="blog-card">
+            <img class="blog-image" src="Images/Blog2.png" alt="Two Muracas Painted with the puerto rican flag "> 
+            <div class="blog-content">
+                <h2 class="blog-title">The Influence of Taino, Spanish, and African Cultures</h2>
+                <p class="blog-description">Discover how different cultures have contributed to Puerto Rican cuisine.</p><br><br>
+            </div>
+            </div>
+            <div class="blog-card">
+            <img class="blog-image" src="Images/Blog3.png" alt="Plate filled with meat plantains shrimp and salad"> 
+            <div class="blog-content">
+                <h2 class="blog-title">Top 10 Must-Try Puerto Rican Dishes</h2>
+                <p class="blog-description">Find out which traditional Puerto Rican dishes you should add to your culinary bucket list.</p><br><br>
+            </div>
+            </div>
+        </div>
+
+      </section>
+
+      <Section style="background-color: #e69b64;">
+        <div id="contact" class="contact-section">
+          <h2>Contact Us</h2>
+          <div class="contact-form">
+          <input type="text" placeholder="Your Name">
+          <input type="text" placeholder="Your Email">
+          <textarea placeholder="Your Message"></textarea>
+          <button type="submit">Send Message</button>
+          </div>
+      </div>
+
+      </section>
+      <section>
+
+      </section>
+      <section style="background-color: #FFF3D4;">
+        <div class="carousel">
+          <button class="prev" onclick="scrollCarousel(-1)"><i class="fas fa-chevron-left"></i></button>
+          <div class="carousel-container">
+          <img src="Images/Tembleque.png" alt="coconut custart">
+          <img src="Images/Pastelon.png" alt="Banana filling filed with meat ">
+          <img src="Images/Flan.png" alt="Vanilla custard">
+          <img src="Images/Sancocho.png" alt="Puerto rican Beef stew ">
+          <img src="Images/Rice and chicken.png" alt="Rice with fried chicken ">
+          <img src="Images/Rice and Beans.png" alt="rice and beans ">
+          <img src="Images/Mofongo2.png" alt="mashed plantains with skirt steak">
+          <img src="Images/Mofongo.png" alt="mashed plantains with fried pork">
+          <img src="Images/Arroz con gandulez.png" alt="Rice with pigeon peas">
+          
+          </div>
+          <button class="next" onclick="scrollCarousel(1)"><i class="fas fa-chevron-right"></i></button>
+      </div>
+
+
+      </section>
+     
+    
+      <section>
+        <footer class="footer-distributed">
+
+          <div class="footer-left">
+    
+            <h3><img style="width: 30%;" src="Images/LogoC.png" alt=""></h3>
+    
+            <p class="footer-links">
+              <a href="#" class="link-1">Home</a>
+              
+              <a href="#">Shop</a>
+            
+              <a href="#">Blog</a>
+              
+              <a href="#">Contact</a>
+            </p>
+    
+            <p class="footer-company-name">Caribe Eats © 2024</p>
+          </div>
+    
+          <div class="footer-center">
+    
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p><span> 1542 Blank Ave Tampa Florida</p>
+            </div>
+    
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>+1.813.444.4444</p>
+            </div>
+    
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="mailto:support@company.com">support@company.com</a></p>
+            </div>
+    
+          </div>
+    
+          <div class="footer-right">
+    
+            <p class="footer-company-about">
+              <span>About the company</span>
+              At Caribe Eats, we're dedicated to bringing the rich and vibrant flavors of Puerto Rican cuisine to homes around the world. With a passion for authenticity and a commitment to quality, we carefully curate our recipes to capture the essence of traditional Puerto Rican cooking. Join us on a culinary journey to experience the warmth and spirit of Puerto Rico in every bite.
+            </p>
+    
+            <div class="footer-icons">
+    
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-youtube"></i></a>
+    
+            </div>
+    
+          </div>
+    
+        </footer>
+      </section>
+    <script>
+      const carouselContainer = document.querySelector('.carousel-container');
+    
+      function scrollCarousel(direction) {
+        carouselContainer.scrollBy({
+          left: direction * (carouselContainer.offsetWidth / 2), // Scroll by half of container width
+          behavior: 'smooth'
+        });
+      }
+    
+      // Keyboard accessibility
+      document.addEventListener('keydown', function(event) {
+        if (event.key === 'ArrowLeft') {
+          scrollCarousel(-1);
+        } else if (event.key === 'ArrowRight') {
+          scrollCarousel(1);
+        }
+      });
+    </script>
+    
+
+    
+    <script>
+      function toggleRecipeDetails(recipeCard) {
+        recipeCard.classList.toggle('recipe-details-active');
+      }
+    </script>
+
+</body>
+</html>
